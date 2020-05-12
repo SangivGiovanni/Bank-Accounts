@@ -49,25 +49,3 @@ def make_wd(cust, acct_type, acct_no, wd_amt):
         if acct.acct_no == acct_no:
             acct.withdraw(wd_amt)
 
-
-gio = Customer('Gio', 1111)
-
-gio.open_current(54321, 600)
-
-gio.open_savings(65432, 1200)
-
-gio.get_total_deposits()
-
-sanj = Customer("Sanj", 2222)
-
-sanj.open_business(12345, 9800)
-
-sanj.get_total_deposits()
-
-make_dep(gio, 'C', 54321, 2000)
-
-gio.get_total_deposits()
-
-make_wd(sanj, 'B', 12345, 10000)
-
-sanj.get_total_deposits()
